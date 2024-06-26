@@ -1,0 +1,25 @@
+{
+  "name": "blog-preview-card-main",
+  "version": "1.0.0",
+  "description": "Frontend Mentor Blog preview card challenge",
+  "private": true,
+  "scripts": {
+    "minify-html": "html-minifier-terser --input-dir ./src --output-dir ./dist --file-ext html --collapse-whitespace",
+    "minify-css": "cleancss -o ./dist/main.min.css ./src/main.css",
+    "copy-files": "copyfiles -u 1 ./src/images/**/* ./dist",
+    "build": "npm run minify-html && npm run minify-css && npm run copy-files"
+  },
+  "keywords": [
+    "html",
+    "css"
+  ],
+  "author": "codepalacios",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "copyfiles": "^2.4.1",
+    "html-minifier-terser": "^7.2.0"
+  }
+}
