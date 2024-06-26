@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "minify-html": "html-minifier-terser --input-dir ./src --output-dir ./dist --file-ext html --collapse-whitespace",
-    "minify-css": "cleancss -o ./dist/main.min.css ./src/main.css",
+    "minify-css": "cleancss -o ./dist/css/normalize.min.css ./src/css/normalize.css && cleancss -o ./dist/css/main.min.css ./src/css/main.css",
     "copy-files": "copyfiles -u 1 ./src/images/**/* ./dist",
     "build": "npm run minify-html && npm run minify-css && npm run copy-files"
   },
@@ -14,9 +14,6 @@
     "css"
   ],
   "author": "codepalacios",
-  "dependencies": {
-    "normalize.css": "^8.0.1"
-  },
   "devDependencies": {
     "clean-css-cli": "^5.6.3",
     "copyfiles": "^2.4.1",
