@@ -39,6 +39,10 @@ body {
   gap: 1.5rem;
   max-width: 20.4375rem;
   margin: 0 auto;
+  transition: box-shadow 0.3s ease;
+}
+.main__article:hover {
+  box-shadow: 16px 16px 0px #000000;
 }
 .article__image {
   border-radius: 10px;
@@ -116,7 +120,6 @@ body {
     place-items: center;
   }
   .main__article {
-    box-shadow: 16px 16px 0px #000000;
     max-width: 24rem;
     margin: 0;
   }
